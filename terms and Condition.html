@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - Pragya Trust</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="term and Condition.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+            <div class="logo-text">
+                <b class="pragya-trust">Pragya Trust</b>
+            </div>
+        </div>
+        <nav class="navigation">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="about-us.html" class="nav-item">About Us</a>
+            <a href="programs.html" class="nav-item">Programs</a>
+            <a href="Events.html" class="nav-item">Events</a>
+            <a href="Resources.html" class="nav-item">Resources</a>
+            <a href="contact-us.html" class="nav-item">Contact Us</a>
+        </nav>
+        <div class="cta-buttons">
+            <button class="btn Signin/up-btn">Signin/up</button>
+            <button class="btn learn-more-btn">Learn More</button>
+        </div>
+    </header>
+
+    <div class="terms-container">
+        <h1>Terms and Conditions</h1>
+        <p>Please read our Terms and Conditions carefully before using our services.</p>
+        <h2>General Terms</h2>
+        <p>By accessing our website, you agree to comply with these terms and conditions.</p>
+        <h2>License to Use</h2>
+        <p>You may view, download, and print pages from our website for personal use, subject to the restrictions set out below.</p>
+        <!-- Add more sections as needed -->
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <ul>
+                <li><a href="Prcy PLC.Html">Privacy Policy</a></li>
+                <li><a href="terms and Condition.html">Terms and Conditions</a></li>
+                <li><a href="news.html">News&Updates</a></li>
+                <li><a href="Blogs.html">Blogs</a></li>
+                <li><a href="#">© 2023 Pragya Trust. All rights reserved.</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        const termsContent = [
+            { title: "General Terms", content: "By accessing our website, you agree to comply with these terms and conditions." },
+            { title: "License to Use", content: "You may view, download, and print pages from our website for personal use, subject to the restrictions set out below." },
+            { title: "Restrictions", content: "You must not use our website in any way that causes, or may cause, damage to the website or impairment of the availability or accessibility of the website." }
+        ];
+
+        function loadTerms() {
+            const termsContainer = document.getElementById('terms-content');
+            termsContent.forEach(section => {
+                const sectionElement = document.createElement('div');
+                sectionElement.innerHTML = `
+                    <h2>${section.title}</h2>
+                    <p>${section.content}</p>
+                `;
+                termsContainer.appendChild(sectionElement);
+            });
+        }
+
+        window.onload = loadTerms;
+    </script>
+</body>
+</html>

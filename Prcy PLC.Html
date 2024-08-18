@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Pragya Trust</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="Prcy PLC.CSS">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+            <div class="logo-text">
+                <b class="pragya-trust">Pragya Trust</b>
+            </div>
+        </div>
+        <nav class="navigation">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="about-us.html" class="nav-item">About Us</a>
+            <a href="programs.html" class="nav-item">Programs</a>
+            <a href="Events.html" class="nav-item">Events</a>
+            <a href="Resources.html" class="nav-item">Resources</a>
+            <a href="contact-us.html" class="nav-item">Contact Us</a>
+        </nav>
+        <div class="cta-buttons">
+            <button class="btn Signin/up-btn">Signin/up</button>
+            <button class="btn learn-more-btn">Learn More</button>
+        </div>
+    </header>
+
+    <div class="policy-container">
+        <h1>Privacy Policy</h1>
+        <p>Our Privacy Policy outlines how we handle your data and protect your privacy.</p>
+        <h2>Data Collection</h2>
+        <p>We collect certain data to improve our services and provide a better experience.</p>
+        <h2>Use of Data</h2>
+        <p>Your data is used to personalize your experience, provide customer support, and improve our services.</p>
+        <!-- Add more sections as needed -->
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <ul>
+                <li><a href="Prcy PLC.Html">Privacy Policy</a></li>
+                <li><a href="terms and Condition.html">Terms and Conditions</a></li>
+                <li><a href="news.html">News&Updates</a></li>
+                <li><a href="Blogs.html">Blogs</a></li>
+                <li><a href="#">© 2023 Pragya Trust. All rights reserved.</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        const policyContent = [
+            { title: "Data Collection", content: "We collect certain data to improve our services and provide a better experience." },
+            { title: "Use of Data", content: "Your data is used to personalize your experience, provide customer support, and improve our services." },
+            { title: "Data Protection", content: "We implement various security measures to protect your personal information from unauthorized access or disclosure." }
+        ];
+
+        function loadPolicy() {
+            const policyContainer = document.getElementById('policy-content');
+            policyContent.forEach(section => {
+                const sectionElement = document.createElement('div');
+                sectionElement.innerHTML = `
+                    <h2>${section.title}</h2>
+                    <p>${section.content}</p>
+                `;
+                policyContainer.appendChild(sectionElement);
+            });
+        }
+
+        window.onload = loadPolicy;
+    </script>   
+
+</body>
+</html>

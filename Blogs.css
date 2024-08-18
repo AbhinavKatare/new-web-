@@ -1,0 +1,136 @@
+/* Existing styles */
+.blogs-container {
+    padding: 60px 40px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.blogs-container h1 {
+    font-size: 36px;
+    color: #e25822;
+    margin-bottom: 40px;
+}
+
+.blog-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.blog-item h2 {
+    font-size: 24px;
+    color: #1c160c;
+    margin-bottom: 10px;
+}
+
+.blog-item p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.blog-item .btn-primary {
+    background-color: #e25822;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Added styles for header and footer */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    border-bottom: 1px solid #fdfff5;
+    background-color: #003366;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: #f8f8f8;
+}
+
+.navigation {
+    display: flex;
+    gap: 36px;
+    background-color: #003366;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #f8f8f8;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-item:hover {
+    color: #E25822;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #E25822;
+}
+
+footer {
+    background-color: #1c160c;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-container ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-container ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-container ul li a:hover {
+    text-decoration: underline;
+}

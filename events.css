@@ -1,0 +1,283 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Font Styles */
+.bona-nova-sc-regular {
+  font-family: "Bona Nova SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bona-nova-sc-bold {
+  font-family: "Bona Nova SC", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.bona-nova-sc-regular-italic {
+  font-family: "Bona Nova SC", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #1c160c;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #f8f8f8;
+  color: #1c160c;
+  border: 1px solid #000000;
+}
+
+.btn-secondary {
+  background-color: #f4efe5;
+  color: #1c160c;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  border-bottom: 1px solid #fdfff5;
+  background-color: #003366;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f8f8f8;
+}
+
+.navigation {
+  display: flex;
+  gap: 36px;
+  background-color: #003366;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #f8f8f8;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav-item:hover {
+  color: #E25822;
+}
+
+.btn:hover {
+  background-color: #E25822;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 8px;
+}
+/* Hero Section*/
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.events {
+  padding: 20px;
+}
+
+.events h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.event {
+  display: flex;
+  gap: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer; /* Add cursor pointer for interactive indication */
+}
+
+.event-info {
+  flex: 1;
+}
+
+.event-info h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.event-info p {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+/* Get Involved Section Styles */
+.get-involved-section {
+  padding: 40px 16px;
+  background-color: #003366;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Footer Styles */
+.footer {
+  padding: 40px 16px;
+  background-color: #1c160c;
+  color: #ffffff;
+} 
+.footer-content p {
+  color: #1c160c;
+  font-size: 14px;
+}
+
+/* Modal Styles */
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #f4efe5;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 12px 20px;
+  }
+
+  .navigation {
+    gap: 20px;
+  }
+
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .hero-image,
+  .hero-text {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .navigation {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navigation {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cta-buttons {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-cta-buttons {
+    flex-direction: column;
+  }
+}

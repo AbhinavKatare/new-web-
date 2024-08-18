@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Updates - Pragya Trust</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+            <div class="logo-text">
+                <b class="pragya-trust">Pragya Trust</b>
+            </div>
+        </div>
+        <nav class="navigation">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="about-us.html" class="nav-item">About Us</a>
+            <a href="programs.html" class="nav-item">Programs</a>
+            <a href="Events.html" class="nav-item">Events</a>
+            <a href="Resources.html" class="nav-item">Resources</a>
+            <a href="contact-us.html" class="nav-item">Contact Us</a>
+        </nav>
+        <div class="cta-buttons">
+            <button class="btn Signin/up-btn">Signin/up</button>
+            <button class="btn learn-more-btn">Learn More</button>
+        </div>
+    </header>
+
+    <div class="news-container">
+        <h1>Latest News & Updates</h1>
+        <div class="news-item">
+            <h2>News Title 1</h2>
+            <p>Short description of the news goes here.</p>
+            <a href="#" class="btn-primary">Read More</a>
+        </div>
+        <div class="news-item">
+            <h2>News Title 2</h2>
+            <p>Short description of the news goes here.</p>
+            <a href="#" class="btn-primary">Read More</a>
+        </div>
+        <!-- Add more news items as needed -->
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <ul>
+                <li><a href="Prcy PLC.Html">Privacy Policy</a></li>
+                <li><a href="terms and Condition.html">Terms and Conditions</a></li>
+                <li><a href="news.html">News&Updates</a></li>
+                <li><a href="Blogs.html">Blogs</a></li>
+                <li><a href="#">© 2023 Pragya Trust. All rights reserved.</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        const newsItems = [
+            { title: "News Title 1", description: "Short description of the news goes here." },
+            { title: "News Title 2", description: "Another short description of the news goes here." },
+            { title: "News Title 3", description: "Yet another short description of the news goes here." },
+            { title: "News Title 4", description: "A fourth short description of the news goes here." }
+        ];
+
+        let currentIndex = 0;
+        const itemsPerPage = 2;
+
+        function createNewsItem(item) {
+            const newsItem = document.createElement('div');
+            newsItem.className = 'news-item';
+            newsItem.innerHTML = `
+                <h2>${item.title}</h2>
+                <p>${item.description}</p>
+                <a href="#" class="btn-primary">Read More</a>
+            `;
+            return newsItem;
+        }
+
+        function loadMoreNews() {
+            const newsList = document.getElementById('news-list');
+            const endIndex = Math.min(currentIndex + itemsPerPage, newsItems.length);
+            
+            for (let i = currentIndex; i < endIndex; i++) {
+                newsList.appendChild(createNewsItem(newsItems[i]));
+            }
+            
+            currentIndex = endIndex;
+            
+            if (currentIndex >= newsItems.length) {
+                document.getElementById('load-more').style.display = 'none';
+            }
+        }
+
+        document.getElementById('load-more').addEventListener('click', loadMoreNews);
+
+        // Initial load
+        loadMoreNews();
+    </script>
+</body>
+</html>
