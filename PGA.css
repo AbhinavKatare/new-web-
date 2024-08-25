@@ -1,0 +1,253 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #1c160c;
+  background-color: #f8f8f8;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  border-bottom: 1px solid #fdfff5;
+  background-color: #003366;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f8f8f8;
+}
+
+.navigation {
+  display: flex;
+  gap: 36px;
+  background-color: #003366;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #f8f8f8;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav-item:hover {
+  color: #E25822;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.signin-btn {
+  background-color: #1E90FF;
+  color: #ffffff;
+}
+
+.learn-more-btn {
+  background-color: #4CAF50;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #e25822;
+  color: #f8f8f8;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+/* Sub Navbar Styles */
+.sub-nav {
+  background-color: #f4efe5;
+  padding: 10px 0;
+}
+
+.sub-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.sub-nav li {
+  margin: 0 15px;
+}
+
+.sub-nav a {
+  text-decoration: none;
+  color: #1c160c;
+  font-weight: 500;
+}
+
+.sub-nav a:hover {
+  color: #009963;
+}
+
+/* Section Styles */
+section {
+  padding: 40px 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* PITCS Section */
+#pitcs {
+  background-color: #f4efe5;
+}
+
+/* Lectures Section */
+#lectures {
+  background-color: #ffffff;
+}
+
+/* Meditation Section */
+#meditation {
+  background-color: #f4efe5;
+}
+
+/* Get Involved Section Styles */
+.get-involved-section {
+  background-color: #003366;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.get-involved-section h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.get-involved-section p {
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.get-involved-section .cta-buttons {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Footer Styles */
+.footer-container {
+  background-color: #1c160c;
+  padding: 20px;
+  color: #f8f8f8;
+}
+
+.footer-container ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-container li {
+  margin: 0 10px;
+}
+
+.footer-container a {
+  color: #f8f8f8;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-container a:hover {
+  color: #E25822;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 12px 20px;
+  }
+
+  .navigation {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .navigation {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .sub-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sub-nav li {
+    margin: 5px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navigation {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cta-buttons {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,212 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #1c160c;
+  background-color: #f8f8f8;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #009963;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: #f4efe5;
+  color: #1c160c;
+}
+
+.btn.learn-more-btn {
+  background-color: #4CAF50;
+  color: #ffffff;
+}
+
+.btn.signin-btn {
+  background-color: #1E90FF;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #e25822;
+  color: #f8f8f8;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  border-bottom: 1px solid #fdfff5;
+  background-color: #003366;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f8f8f8;
+}
+
+.navigation {
+  display: flex;
+  gap: 36px;
+  background-color: #003366;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #f8f8f8;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav-item:hover {
+  color: #E25822;
+}
+
+/* Content Styles */
+.content {
+  padding: 40px 16px;
+}
+
+.content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.content h3 {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.content p {
+  margin-bottom: 20px;
+}
+
+.content ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Get Involved Section Styles */
+.get-involved-section {
+  padding: 40px 16px;
+  text-align: center;
+  background-color: #003366;
+  color: #f8f8f8;
+}
+
+.get-involved-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.get-involved-section p {
+  margin-bottom: 30px;
+}
+
+/* Footer Styles */
+.footer-container {
+  background-color: #1c160c;
+  padding: 20px;
+  text-align: left;
+  color: #f8f8f8;
+  font-size: 16px;
+}
+
+.footer-container ul {
+  list-style-type: none;
+}
+
+.footer-container ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-container ul li a {
+  color: #f8f8f8;
+  text-decoration: none;
+}
+
+.footer-container ul li a:hover {
+  color: #E25822;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 12px 20px;
+  }
+
+  .navigation {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .navigation {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navigation {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cta-buttons {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+}
